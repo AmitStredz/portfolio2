@@ -1,10 +1,9 @@
-import React, { useEffect, useRef } from "react";
 
 import profile from "../assets/profile3.png";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { CiLinkedin } from "react-icons/ci";
-import { SlSocialLinkedin } from "react-icons/sl";
+// import { CiLinkedin } from "react-icons/ci";
+// import { SlSocialLinkedin } from "react-icons/sl";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

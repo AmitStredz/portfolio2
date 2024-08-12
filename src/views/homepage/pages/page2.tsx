@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import profile from "../assets/profile2.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
