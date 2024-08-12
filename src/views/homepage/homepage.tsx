@@ -1,13 +1,32 @@
-import React from 'react'
-import Header from '../components/header'
+import React, { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import Hero from './pages/hero'
+gsap.registerPlugin(ScrollTrigger);
 
-export default function homepage() {
+export default function Homepage() {
+
+  useEffect(() => {
+    gsap.to(".one", {
+      scrollTrigger: {
+        trigger: ".one",
+        start: "top top",
+        end: "bottom top",
+        pin: true,
+        markers: true,
+        scrub: true,
+      },
+    });
+  }, []);
+
   return (
-    <div className=''>
-        <Header/>
-        <Hero/>
+    <div className="">
+      <div className="one w-screen h-screen bg-pink-300 flex justify-center items-center">
+        Hello......
+      </div>
+      <div className="two w-screen h-screen bg-green-400 flex justify-center items-center">
+        Hi.....
+      </div>
     </div>
-  )
+  );
 }

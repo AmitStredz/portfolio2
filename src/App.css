@@ -1,0 +1,12 @@
+.pin-container {
+    @apply h-[300vh]; /* Adjust based on your needs */
+  }
+  
+  .pin-section {
+    @apply h-screen bg-blue-300;
+  }
+  
+  .scroll-section {
+    @apply h-screen bg-red-300;
+  }
+  

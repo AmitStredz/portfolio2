@@ -1,10 +1,10 @@
 import React from "react";
 
-import circleLogo from "./assets/logo-circle.png";
+import circleLogo from './assets/logoCircle.png';
 
 export default function header() {
   return (
-    <div className="flex justify-between items-center w-screen h-24 p-5 px-20  bg-black bg-opacity-30">
+    <div className="sticky top-0 flex justify-between items-center w-screen h-24 p-5 px-20 bg-black bg-opacity-25 text-white">
       <div className="logo">
         <img src={circleLogo} className="w-14" alt="logo" />
       </div>
@@ -15,8 +15,8 @@ export default function header() {
         <span>Services</span>
       </div>
 
-      <div className="contact-btn">
-        <button className="border border-slate-500 rounded-lg p-1 px-4">Contact Me</button>
+      <div className="cont">
+        <button className="btn-fill">Contact Me</button>
       </div>
     </div>
   );
